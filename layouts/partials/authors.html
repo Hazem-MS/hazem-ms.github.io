@@ -1,0 +1,4 @@
+{{- range $i, $author := . -}}
+  {{- if $i }}, {{ end -}}
+  {{- if eq $author "H. Sallouha" -}}<strong>{{ $author }}</strong>{{- else -}}{{ $author }}{{- end -}}
+{{- end -}}

@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<div class="page-band tinted"><div class="container">
+  <section class="section-grid contact-section borderless" aria-labelledby="email-title">
+    <div class="section-label"><h2 id="email-title">Get in touch</h2></div>
+    <div><span class="contact-email">{{ replace .Site.Params.email "@" "[at]" }}</span><p>{{ .Site.Params.department }}<br>{{ .Site.Params.division }} · {{ .Site.Params.institution }}<br>Kasteelpark Arenberg 10 - box 2444<br>3001 Leuven<br>Belgium</p><div class="social-links"><a href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="{{ .Site.Params.orcid }}" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="{{ .Site.Params.institutional }}" target="_blank" rel="noopener noreferrer">KU Leuven profile ↗</a></div></div>
+  </section>
+</div></div>
+{{ end }}

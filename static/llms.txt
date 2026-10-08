@@ -1,0 +1,11 @@
+# Hazem Sallouha
+
+Hazem Sallouha is an Assistant Professor in the Department of Electrical Engineering (ESAT), KU Leuven, Belgium, in the WaveCore division.
+His research covers signal processing in dense non-terrestrial wireless networks, joint communication, sensing and localization, and sustainable Internet of Things.
+
+- Home and biography: https://hazem-ms.github.io/#bio
+- Research: https://hazem-ms.github.io/research/
+- Selected publications: https://hazem-ms.github.io/research/#publications
+- Teaching: https://hazem-ms.github.io/teaching/
+- Team: https://hazem-ms.github.io/team/
+- Contact: https://hazem-ms.github.io/contact/

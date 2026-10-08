@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<div class="page-band tinted"><div class="container">
+  <section class="section-grid borderless" aria-labelledby="students-title">
+    <div class="section-label"><h2 id="students-title">PhD students</h2></div>
+    <div class="team-list">{{ range .Site.Data.team }}<article class="team-member"><h3>{{ .name }}</h3><p>{{ .research }}</p></article>{{ end }}</div>
+  </section>
+</div></div>
+{{ end }}

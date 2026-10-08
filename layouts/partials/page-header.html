@@ -1,0 +1,6 @@
+<header class="container page-heading">
+  <p class="eyebrow institution">{{ .Site.Params.institution }} · {{ .Site.Params.division }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose page-intro">{{ . }}</div>{{ end }}
+  {{ with .Params.research_interests }}<ul class="research-interests">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+</header>

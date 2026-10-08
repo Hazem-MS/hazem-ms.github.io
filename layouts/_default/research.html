@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+{{ with .Site.Data.projects }}
+<div class="page-band tinted"><div class="container">
+  <section class="section-grid borderless" id="projects" aria-labelledby="projects-title">
+    <div class="section-label"><h2 id="projects-title">Ongoing research projects</h2></div>
+    <div class="project-list">{{ range . }}<article class="project"><h3><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></h3><p>{{ .programme }}</p></article>{{ end }}</div>
+  </section>
+</div></div>
+{{ end }}
+
+<div class="page-band"><div class="container">
+  <section class="section-grid borderless" id="publications" aria-labelledby="publications-title">
+    <div class="section-label"><h2 id="publications-title">Selected<br class="desktop-only"> publications</h2><a class="text-link" href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener noreferrer">Full list on Scholar ↗</a></div>
+    <div class="publication-groups">
+      {{ $working := where .Site.Data.papers "status" "ne" "published" }}
+      {{ with $working }}<h3 class="group-title">Working papers & forthcoming</h3>{{ range . }}{{ partial "paper.html" . }}{{ end }}{{ end }}
+      {{ $published := where .Site.Data.papers "status" "published" }}
+      {{ range sort $published "year" "desc" }}{{ partial "paper.html" . }}{{ end }}
+      <div class="dataset-note"><h3>Datasets & resources</h3><p>The Li-IoT dataset accompanies our work on batteryless, light- and energy-aware environmental sensing.</p><a class="text-link" href="https://scholar.google.com/scholar?q=Descriptor%3A+Batteryless%2C+Light-+and+Energy-Aware+IoT+Environmental+Sensing+Dataset" target="_blank" rel="noopener noreferrer">Li-IoT publication ↗</a></div>
+    </div>
+  </section>
+</div></div>
+
+<div class="page-band tinted"><div class="container">
+  <section class="section-grid borderless" id="talks" aria-labelledby="talks-title">
+    <div class="section-label"><h2 id="talks-title">Talks & tutorials</h2></div>
+    <div><ul class="dated-list">{{ range first 3 .Site.Data.talks }}{{ partial "talk.html" . }}{{ end }}</ul><details class="older-talks"><summary>Earlier talks & tutorials <span class="metadata">2024–2017</span></summary><ul class="dated-list">{{ range after 3 .Site.Data.talks }}{{ partial "talk.html" . }}{{ end }}</ul></details></div>
+  </section>
+</div></div>
+{{ end }}

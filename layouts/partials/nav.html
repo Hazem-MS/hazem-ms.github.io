@@ -1,0 +1,30 @@
+<header class="site-header">
+  <nav class="container navigation" aria-label="Main navigation">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Params.author }}</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" hidden>
+      <span>Menu</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="1.5"/></svg>
+    </button>
+    <ul class="main-menu" id="main-menu">
+      {{ range .Site.Menus.main }}
+      {{ $active := and .Page (eq .Page.RelPermalink $.RelPermalink) }}
+      <li><a href="{{ if .Page }}{{ .Page.RelPermalink }}{{ else }}{{ .URL | relURL }}{{ end }}"{{ if $active }} aria-current="page"{{ end }}{{ if hasSuffix .URL ".pdf" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
+<script>
+  (() => {
+    const button = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('main-menu');
+    button.hidden = false;
+    menu.classList.add('enhanced');
+    const close = () => { button.setAttribute('aria-expanded', 'false'); menu.classList.remove('is-open'); };
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(expanded));
+      menu.classList.toggle('is-open', expanded);
+    });
+    menu.addEventListener('click', event => { if (event.target.closest('a')) close(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') { close(); button.focus(); } });
+  })();
+</script>

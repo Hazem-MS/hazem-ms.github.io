@@ -1,0 +1,44 @@
+baseURL: "https://hazem-ms.github.io/"
+title: "Hazem Sallouha"
+languageCode: en-gb
+timeZone: Europe/Brussels
+disableKinds: [taxonomy, term, RSS]
+enableRobotsTXT: true
+disableHugoGeneratorInject: true
+
+params:
+  author: "Hazem Sallouha"
+  role: "Assistant Professor"
+  department: "Department of Electrical Engineering (ESAT)"
+  institution: "KU Leuven"
+  division: "WaveCore"
+  email: "hazem.sallouha@kuleuven.be"
+  description: "Hazem Sallouha is an Assistant Professor at KU Leuven researching signal processing, non-terrestrial wireless networks, localization, sensing, and sustainable IoT."
+  tagline: "I work on system design and signal processing in dense, non-terrestrial wireless networks, addressing localization and sensing challenges."
+  scholar: "https://scholar.google.com/citations?user=EVobYTMAAAAJ&hl=en"
+  orcid: "https://orcid.org/0000-0002-1288-1023"
+  linkedin: "https://www.linkedin.com/in/h-sallouha/"
+  institutional: "https://www.esat.kuleuven.be/wavecorearenberg/people-of-wavecore-arenberg/00107562"
+  researchgate: "https://www.researchgate.net/profile/Hazem_Sallouha"
+  mysite:
+    credit: true
+    discovery: false
+    design:
+      reference: "https://brandonstewart.org/"
+      concept: "Warm academic document: serif headings, rectangular portrait, alternating light backgrounds, quiet copper links, and separate academic pages."
+
+menu:
+  main:
+    - {name: "Home", pageRef: "/", weight: 10}
+    - {name: "Research", pageRef: "/research", weight: 20}
+    - {name: "Teaching", pageRef: "/teaching", weight: 30}
+    - {name: "Team", pageRef: "/team", weight: 40}
+    - {name: "Contact", pageRef: "/contact", weight: 60}
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+
+outputs:
+  home: [HTML]

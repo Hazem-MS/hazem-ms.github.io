@@ -1,0 +1,6 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div><a class="footer-name" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Params.author }}</a><p>{{ .Site.Params.role }} · {{ .Site.Params.institution }}<br>© {{ now.Year }}</p></div>
+    {{ if .Site.Params.mysite.credit }}<p class="credit">Created using <a href="https://garyking.org/mysite" target="_blank" rel="noopener noreferrer">GaryKing.org/mysite</a></p>{{ end }}
+  </div>
+</footer>

@@ -1,0 +1,42 @@
+- year: 2026
+  title: "Integrating NTNs in 5G-Advanced and 6G networks"
+  venue: "Wireless Community event, an imec initiative"
+  type: "Invited talk"
+- year: 2025
+  title: "Fundamentals and system design of radio localisation in 6G ground-air-space networks"
+  venue: "IEEE WCNC · Milan, Italy"
+  type: "Half-day tutorial"
+- year: 2025
+  title: "Radio localisation in NTNs"
+  venue: "EMPOWER-6G MSCA Doctoral Network online training"
+  type: "Invited talk"
+- year: 2024
+  title: "Fundamentals and system design of radio localisation"
+  venue: "6th International Conference on Communications, Signal Processing, and their Applications · Istanbul, Türkiye"
+  type: "Invited talk"
+- year: 2024
+  title: "Sustainable and reliable BLE, with applications in healthcare and air quality monitoring"
+  venue: "Wireless Community workshop, imec · Leuven, Belgium"
+  type: "Invited talk"
+- year: 2024
+  title: "Fundamentals and system design of radio localisation in ground-air-space networks"
+  venue: "IEEE JC&S symposia · Leuven, Belgium"
+  type: "Half-day tutorial"
+- year: 2022
+  title: "Terrestrial and non-terrestrial localisation"
+  venue: "University of California, Los Angeles · USA"
+- year: 2022
+  title: "Getting value out of your PhD beyond papers"
+  venue: "SSIE summer school · Brixen, Italy"
+  type: "Invited talk"
+- year: 2022
+  title: "Aircraft localisation using noncoherent CWNs"
+  venue: "Cyber-Alp · Switzerland"
+  type: "Invited talk"
+- year: 2019
+  title: "Sense and avoid technology for small drones"
+  venue: "3rd CORUS workshop, ENAV · Italy"
+- year: 2017
+  title: "Detection and localisation of amateur drones"
+  venue: "IEEE SCVT · Leuven, Belgium"
+  type: "Invited talk"

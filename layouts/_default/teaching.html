@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<div class="page-band tinted"><div class="container">
+  <section class="section-grid borderless" aria-labelledby="courses-title">
+    <div class="section-label"><h2 id="courses-title">Courses</h2><p>KU Leuven</p></div>
+    <div>{{ range .Site.Data.teaching }}<article class="course"><p class="eyebrow">{{ .code }}</p><h3>{{ .course }}</h3><p class="metadata">{{ .role }} · {{ .institution }}{{ with .term }} · {{ . }}{{ end }}</p></article>{{ end }}</div>
+  </section>
+</div></div>
+{{ end }}
