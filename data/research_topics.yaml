@@ -1,0 +1,6 @@
+- id: "ntn"
+  label: "Non-terrestrial networks"
+- id: "localization-sensing"
+  label: "Joint localization and sensing"
+- id: "distributed-sustainable"
+  label: "Distributed processing and sustainable networking"

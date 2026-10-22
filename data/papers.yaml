@@ -1,9 +1,50 @@
+- title: "On the Alignment Between Spectral Efficiency and Positioning Accuracy in Multi-LEO Clusters"
+  authors: ["K. Kapoglis", "S. Saleh", "H. Wymeersch", "H. Sallouha"]
+  year: 2026
+  venue: "IEEE ISAC Conference"
+  status: "accepted"
+  link: "https://arxiv.org/abs/2610.13526"
+  tags: ["ntn", "localization-sensing", "distributed-sustainable"]
+
+- title: "Descriptor: Batteryless, Light- and Energy-Aware IoT Environmental Sensing Dataset (Li-IoT)"
+  authors: ["J. Fernández Landivar", "I. Gryech", "A. Colpaert", "J. Vansevenant", "H. Sallouha", "S. Pollin"]
+  year: 2026
+  venue: "IEEE Data Descriptions, 3"
+  status: "published"
+  link: "https://ieeexplore.ieee.org/document/11611890"
+  tags: ["distributed-sustainable"]
+
+- title: "Data Augmentation and Attention for massive MIMO-based Indoor Localization in Changing Environments"
+  authors: ["L. Schuhmacher", "H. Sallouha", "I. Gryech", "S. Pollin"]
+  year: 2026
+  venue: "IEEE ICC Conference Proceedings"
+  status: "published"
+  link: "https://arxiv.org/abs/2602.12954"
+  tags: ["localization-sensing"]
+
+- title: "Light First, RF Assist: Spatial Optimisation for Minimum Energy Guarantees in Battery-less IoT Network"
+  authors: ["K. Hammoud", "H. J. Visser", "H. Sallouha", "D. Schreurs", "S. Pollin"]
+  year: 2026
+  venue: "IEEE Transactions on Green Communications and Networking, 10"
+  status: "published"
+  link: "https://ieeexplore.ieee.org/document/11520352"
+  tags: ["distributed-sustainable"]
+
+- title: "On the Preamble Influence on LoRa Interference"
+  authors: ["L. Scalambrin", "H. Sallouha", "S. Pollin", "X. Vilajosana"]
+  year: 2026
+  venue: "IEEE Internet of Things Journal, 13(13)"
+  status: "published"
+  link: "https://ieeexplore.ieee.org/document/11488982"
+  tags: ["distributed-sustainable"]
+
 - title: "Joint Mobile User Positioning and Passive Target Sensing using Optimized Sequential Beamforming"
   authors: ["A. Hamrouni", "S. Pollin", "H. Sallouha"]
   year: 2026
   venue: "IEEE Vehicular Technology Conference (VTC-Fall)"
   status: "published"
   link: "https://arxiv.org/abs/2605.15808"
+  tags: ["localization-sensing"]
 
 - title: "AoI-Aware Duty-Cycle Scheduling for Batteryless Light-Based IoT Sensor Networks"
   authors: ["K. Botirov", "A. Zakeri", "H. Sallouha", "M. Katz"]
@@ -12,6 +53,7 @@
   status: "published"
   note: "Early access"
   link: "https://doi.org/10.1109/JIOT.2026.3719857"
+  tags: ["distributed-sustainable"]
 
 - title: "Resource Allocation in Hybrid Radio-Optical IoT Networks Using GNN With Multi-Task Learning"
   authors: ["A. Hamrouni", "S. Pollin", "H. Sallouha"]
@@ -19,6 +61,7 @@
   venue: "IEEE Transactions on Machine Learning in Communications and Networking, 4"
   status: "published"
   link: "https://arxiv.org/abs/2511.07428"
+  tags: ["distributed-sustainable"]
 
 - title: "On the Ground and in the Sky: A Tutorial on Radio Localization in Ground-Air-Space Networks"
   authors: ["H. Sallouha", "S. Saleh", "S. De Bast", "Z. Cui", "S. Pollin", "H. Wymeersch"]
@@ -27,6 +70,7 @@
   status: "published"
   featured: true
   link: "https://arxiv.org/abs/2312.05704"
+  tags: ["ntn", "localization-sensing"]
 
 - title: "ML-Aided 2-D Indoor Positioning Using Energy Harvesters and Optical Detectors for Self-Powered Light-Based IoT Sensors"
   authors: ["A. Perera", "K. Botirov", "H. Sallouha", "M. Katz"]
@@ -34,6 +78,7 @@
   venue: "IEEE Sensors Journal, 25(9)"
   status: "published"
   link: "https://lirias.kuleuven.be/4235820"
+  tags: ["localization-sensing", "distributed-sustainable"]
 
 - title: "REM-U-Net: Deep Learning Based Agile REM Prediction with Energy-Efficient Cell-Free Use Case"
   authors: ["H. Sallouha", "S. Sarkar", "E. Krijestorac", "D. Cabric"]
@@ -41,6 +86,7 @@
   venue: "IEEE Open Journal of Signal Processing, 5"
   status: "published"
   link: "https://arxiv.org/abs/2309.11898"
+  tags: ["distributed-sustainable"]
 
 - title: "Evolution of Non-Terrestrial Networks From 5G to 6G: A Survey"
   authors: ["M. M. Azari", "S. Solanki", "S. Chatzinotas", "O. Kodheli", "H. Sallouha", "A. Colpaert", "J. F. Mendoza Montoya", "S. Pollin", "A. Haqiqatnejad", "A. Mostaani", "E. Lagunas", "B. Ottersten"]
@@ -48,6 +94,7 @@
   venue: "IEEE Communications Surveys & Tutorials, 24(4)"
   status: "published"
   link: "https://arxiv.org/abs/2107.06881"
+  tags: ["ntn"]
 
 - title: "Aerial Vehicles Tracking Using Noncoherent Crowdsourced Wireless Networks"
   authors: ["H. Sallouha", "A. Chiumento", "S. Pollin"]
@@ -55,6 +102,7 @@
   venue: "IEEE Transactions on Vehicular Technology, 70(10)"
   status: "published"
   link: "https://arxiv.org/abs/2108.00922"
+  tags: ["ntn", "localization-sensing"]
 
 - title: "Localization in Ultra Narrow Band IoT Networks: Design Guidelines and Tradeoffs"
   authors: ["H. Sallouha", "A. Chiumento", "S. Rajendran", "S. Pollin"]
@@ -62,6 +110,7 @@
   venue: "IEEE Internet of Things Journal, 6(6)"
   status: "published"
   link: "https://arxiv.org/abs/1907.11205"
+  tags: ["localization-sensing", "distributed-sustainable"]
 
 - title: "Aerial Anchors Positioning for Reliable RSS-Based Outdoor Localization in Urban Environments"
   authors: ["H. Sallouha", "M. M. Azari", "A. Chiumento", "S. Pollin"]
@@ -69,3 +118,4 @@
   venue: "IEEE Wireless Communications Letters, 7(3)"
   status: "published"
   link: "https://arxiv.org/abs/1711.06014"
+  tags: ["ntn", "localization-sensing"]

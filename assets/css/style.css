@@ -99,11 +99,14 @@ img { max-width: 100%; }
 .paper h3 { font-size: 1.03rem; font-weight: 600; }
 .paper .authors { margin-top: 2px; line-height: 1.45; }
 .paper .metadata { margin-top: 2px; line-height: 1.45; }
+.publication-tools { margin-bottom: 22px; }
+.publication-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.publication-filter { max-width: 100%; min-height: 44px; padding: 9px 13px; border: 1px solid var(--color-border); border-radius: 4px; background: transparent; color: var(--color-accent); font-size: .82rem; line-height: 1.4; text-align: left; cursor: pointer; }
+.publication-filter:hover { border-color: var(--color-accent); background: var(--color-surface); }
+.publication-filter[aria-pressed="true"] { border-color: var(--color-accent); background: var(--color-accent); color: white; }
+.paper-tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin-top: 10px; }
+.paper-tags li { padding: 3px 8px; border: 1px solid var(--color-border); border-radius: 3px; color: var(--color-text-muted); font-size: .7rem; line-height: 1.5; }
 .status { display: inline-block; padding: 2px 6px; margin-left: 6px; background: var(--color-surface); font-size: .7rem; letter-spacing: .055em; text-transform: uppercase; }
-.group-title { margin-bottom: 20px; }
-.dataset-note { margin-top: 28px; padding: 22px 24px; background: var(--color-surface); border-left: 2px solid var(--color-accent); }
-.dataset-note h3 { font-size: 1rem; }
-.dataset-note p { font-size: .93rem; margin-block: 8px; }
 .project-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 26px 32px; }
 .project { padding-bottom: 20px; border-bottom: 1px solid var(--color-border); }
 .project-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }

@@ -1,7 +1,9 @@
-<article class="paper">
+{{ $paper := . }}
+<article class="paper" data-tags="{{ delimit (.tags | default (slice)) " " }}">
   <h3><a href="{{ .link }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></h3>
   <p class="authors">{{ partial "authors.html" .authors }}</p>
   <p class="metadata"><cite>{{ .venue }}</cite> · {{ .year }}{{ with .note }} · {{ . }}{{ end }}{{ if ne .status "published" }} <span class="status">{{ .status }}</span>{{ end }}</p>
+  {{ with .tags }}<ul class="paper-tags" aria-label="Research topics">{{ range site.Data.research_topics }}{{ if in $paper.tags .id }}<li>{{ .label }}</li>{{ end }}{{ end }}</ul>{{ end }}
   {{ with .abstract }}<details class="abstract"><summary>Abstract</summary><p>{{ . }}</p></details>{{ end }}
   {{ with .pdf }}<a class="paper-pdf" href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">PDF ↗</a>{{ end }}
 </article>

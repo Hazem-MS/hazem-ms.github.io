@@ -21,3 +21,9 @@ hugo server --bind 127.0.0.1 --port 1313 --baseURL http://localhost:1313/
 ```
 
 Publication uses the manual **Publish approved site to GitHub Pages** workflow.
+
+## Publication filters
+
+The Research page filters selected publications by the topics in `data/research_topics.yaml`. Each entry in `data/papers.yaml` has a `tags` list containing one or more topic IDs: `ntn`, `localization-sensing`, and `distributed-sustainable`. Edit that list to change which filters include a paper. The initial classifications are inferred from paper titles and available arXiv abstracts; the localization and sensing topic also includes work focused on localization alone.
+
+Filters show one topic at a time; **All** restores every selected publication. The Li-IoT descriptor is included as a publication under distributed processing and sustainable networking. Without JavaScript, all publications remain readable.
