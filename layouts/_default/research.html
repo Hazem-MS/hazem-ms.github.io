@@ -5,7 +5,7 @@
 <div class="page-band tinted"><div class="container">
   <section class="section-grid borderless" id="projects" aria-labelledby="projects-title">
     <div class="section-label"><h2 id="projects-title">Ongoing research projects</h2></div>
-    <div class="project-list">{{ range . }}<article class="project"><h3><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></h3><p>{{ .programme }}</p></article>{{ end }}</div>
+    <div class="project-list">{{ range . }}<article class="project"><h3><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></h3>{{ with .title }}<p class="project-title">{{ . }}</p>{{ end }}<p class="project-funding">{{ .programme }}</p>{{ with .role }}<p class="project-role">{{ . }}</p>{{ end }}</article>{{ end }}</div>
   </section>
 </div></div>
 {{ end }}
@@ -21,7 +21,15 @@
         </div>
       </div>
       <div class="publication-list" id="publication-list">
-        {{ range sort .Site.Data.papers "year" "desc" }}{{ partial "paper.html" . }}{{ end }}
+        {{ range slice (dict "type" "journal" "title" "Journal publications") (dict "type" "conference" "title" "International conferences") }}
+        {{ $papers := where site.Data.papers "type" .type }}
+        {{ if $papers }}
+        <section class="publication-category" data-publication-group="{{ .type }}" aria-labelledby="{{ .type }}-publications-title">
+          <h3 class="publication-category-title" id="{{ .type }}-publications-title">{{ .title }}</h3>
+          <div>{{ range sort $papers "year" "desc" }}{{ partial "paper.html" . }}{{ end }}</div>
+        </section>
+        {{ end }}
+        {{ end }}
       </div>
     </div>
   </section>

@@ -96,7 +96,9 @@ img { max-width: 100%; }
 .featured-paper .text-link { display: inline-block; margin-top: 22px; }
 .paper { padding-block: 24px; border-bottom: 1px solid var(--color-border); }
 .paper:first-child { padding-top: 0; }
-.paper h3 { font-size: 1.03rem; font-weight: 600; }
+.paper h4 { font-size: 1.03rem; font-weight: 600; }
+.publication-category + .publication-category { margin-top: 36px; }
+.publication-category-title { margin-bottom: 22px; font-family: var(--font-heading); font-size: 1.5rem; line-height: 1.2; }
 .paper .authors { margin-top: 2px; line-height: 1.45; }
 .paper .metadata { margin-top: 2px; line-height: 1.45; }
 .publication-tools { margin-bottom: 22px; }
@@ -113,6 +115,7 @@ img { max-width: 100%; }
 .project h3 { font-family: var(--font-heading); font-size: 1.35rem; }
 .project-heading .metadata { white-space: nowrap; }
 .project > p { font-size: .9rem; margin-top: 6px; }
+.project .project-funding { color: var(--color-text-muted); }
 .course { padding-block: 22px; border-bottom: 1px solid var(--color-border); }
 .course:first-child { padding-top: 0; }
 .course h3 { font-size: 1.05rem; font-weight: 600; margin-top: 6px; }

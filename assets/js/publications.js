@@ -5,6 +5,7 @@
   const tools = browser.querySelector('.publication-tools');
   const buttons = Array.from(browser.querySelectorAll('[data-filter]'));
   const papers = Array.from(browser.querySelectorAll('.paper'));
+  const groups = browser.querySelectorAll('[data-publication-group]');
 
   const filterPapers = (selected) => {
     const topic = selected.dataset.filter;
@@ -16,6 +17,9 @@
 
     buttons.forEach((button) => {
       button.setAttribute('aria-pressed', String(button === selected));
+    });
+    groups.forEach((group) => {
+      group.hidden = !group.querySelector('.paper:not([hidden])');
     });
   };
 
